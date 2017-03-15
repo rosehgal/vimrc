@@ -5,11 +5,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
 Plugin 'dracula/vim'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-call vundle#end()
+Plugin 'ervandew/supertab'
+Plugin 'airblade/vim-gitgutter'
 
+call vundle#end()
 
 func! WordProcessorMode()
     setlocal textwidth=80
@@ -28,8 +30,14 @@ set textwidth=80
 set relativenumber 
 set laststatus=2
 
-"set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
-
 syntax on
 color dracula
+
+"---------------------------------- My shortcuts -----------------
+nmap <C-Left> gT
+nmap <C-Right> gt
+nmap <C-o> :tabnew<space>
+nmap <C-x> :tabclose<CR>
+"----------------------------------------------------------------
+
 com! WP call WordProcessorMode()
