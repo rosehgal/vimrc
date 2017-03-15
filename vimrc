@@ -26,6 +26,8 @@ set shiftwidth=4
 set autoindent
 set textwidth=80
 set relativenumber 
+set laststatus=2
+
 "set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 syntax on
