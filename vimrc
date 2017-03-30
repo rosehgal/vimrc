@@ -5,7 +5,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
 Plugin 'dracula/vim'
-"Plugin 'tpope/vim-fugitive'
+Plugin 'lervag/vimtex'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
@@ -26,7 +26,7 @@ set softtabstop=4
 set shiftwidth=4
 
 set autoindent
-set textwidth=80
+set textwidth=180
 set relativenumber 
 set laststatus=2
 
@@ -38,6 +38,11 @@ nmap <C-Left> gT
 nmap <C-Right> gt
 nmap <C-o> :tabnew<space>
 nmap <C-x> :tabclose<CR>
+
+inoremap { {<CR><BS>}<left>
+inoremap ( (<CR><BS>)<left>
+inoremap [ [<CR><BS>]<left>
+inoremap < <<CR><BS>><left>
 "----------------------------------------------------------------
 
 com! WP call WordProcessorMode()
