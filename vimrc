@@ -39,10 +39,6 @@ nmap <C-Right> gt
 nmap <C-o> :tabnew<space>
 nmap <C-x> :tabclose<CR>
 
-inoremap { {<CR><BS>}<left>
-inoremap ( (<CR><BS>)<left>
-inoremap [ [<CR><BS>]<left>
-inoremap < <<CR><BS>><left>
 "----------------------------------------------------------------
 
 com! WP call WordProcessorMode()
