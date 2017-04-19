@@ -14,7 +14,6 @@ Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 
 func! WordProcessorMode()
-    setlocal textwidth=80
     setlocal smartindent
     setlocal spell spelllang=en_us
     setlocal noexpandtab
@@ -26,14 +25,16 @@ set softtabstop=4
 set shiftwidth=4
 
 set autoindent
-set textwidth=180
+set textwidth=1800
 set relativenumber 
 set laststatus=2
+set wrap
 
 syntax on
 color dracula
 
 "---------------------------------- My shortcuts -----------------
+
 nmap <C-Left> gT
 nmap <C-Right> gt
 nmap <C-o> :tabnew<space>
