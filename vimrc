@@ -10,11 +10,11 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'reedes/vim-lexical'
 
 call vundle#end()
 
 func! WordProcessorMode()
-    setlocal textwidth=80
     setlocal smartindent
     setlocal spell spelllang=en_us
     setlocal noexpandtab
@@ -26,12 +26,21 @@ set softtabstop=4
 set shiftwidth=4
 
 set autoindent
-set textwidth=180
 set relativenumber 
+set textwidth=1800
 set laststatus=2
 
+set wrap
+
+set background=dark
+let g:pencil_higher_contrast_ui = 1
+let g:pencil_neutral_headings = 1 
+let g:airline_theme = 'pencil'
+
 syntax on
-color dracula
+color pencil 
+
+"Setting pencil color methods"
 
 "---------------------------------- My shortcuts -----------------
 nmap <C-Left> gT
